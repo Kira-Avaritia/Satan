@@ -25,7 +25,7 @@ client.once('ready', () => {
 });
 
 client.on('ready', () => {
-    client.user.setActivity("al.help | Trap Season")
+    client.user.setActivity("al.help | Weewoo")
 });
 
 client.on('message', message =>{
