@@ -8,6 +8,8 @@ const fs = require('fs');
 
 const fetch = require('node-fetch');
 
+const querystring = require('querystring');
+
 var phrase = ' ';
 
 client.commands = new Discord.Collection();
@@ -65,18 +67,21 @@ client.on('message', message =>{
         client.commands.get('bomb').execute(message, args);
     } else if (command == 'shark'){
        client.commands.get('sharkos').execute(message, args);
-    } else if (command == 'cat'){
-       // const { file } = await fetch('https://aws.random.cat/meow').then(response => response.json());
-
-  //message.channel.send(file);
-  return;
     } else if (command == 'bomb-discord'){
       client.commands.get('bomb-discord').execute(message, args);
     } else if (command == 'latency'){
       client.commands.get('latency').execute(message, args);
     } else if (command == 'exit'){
         client.commands.get('end').execute(message, args);
-    }
+    } else if (command == 'urban') {
+  if (!args.length) {
+    return message.channel.send('You need to supply a search term!');
+  }
+
+	const query = querystring.stringify({ term: args.join(' ') });
+
+  const { list } = await fetch(`https://api.urbandictionary.com/v0/define?${query}`).then(response => response.json());
+}
     
 });
 
