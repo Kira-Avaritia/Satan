@@ -1,0 +1,14 @@
+{
+    "name": "alciel",
+    "version": "1.0.0",
+    "description": "My personal bot boi",
+    "main": "alciel.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Maou Satan",
+    "license": "ISC",
+    "dependencies": {
+        "discord.js": "^12.4.1"
+    }
+}
