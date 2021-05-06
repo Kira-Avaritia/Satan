@@ -160,4 +160,4 @@ client.on('message', async message =>{
 
 
 
-client.login('ODA1MDYxMzAwODM2MjM3MzYz.YBVZww.qtZGNtoUlpEOUGKQx8CuNW8r45Q');
+client.login('Donto-Try-Thefting-Me-Token');
