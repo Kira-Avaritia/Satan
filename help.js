@@ -23,11 +23,12 @@ module.exports = {
         { name: 'latency', value: 'Checks the roundtrip latency of the your connection to the bot and returns with a millisecond value', inline: false },
         { name: 'bomb-discord', value: 'For the times when discord just isnt working and you wanna blow it up.', inline: false },
         { name: 'shark', value: 'For broke heretics without nitro that still want to shark dance', inline: false },
+        { name: 'sauce', value: 'Sends a random sauce, hence the reason I must give a disclaimer. The bot uses a random number generator to find the sauces therefore, stuff like loli and shota may come up. I take no responsibility for this.', inline: false},
   )
 
   
   .setTimestamp()
-  .setFooter('Satan Man v1.5.0', `https://cdn.discordapp.com/avatars/805061300836237363/011e2f59163952b13143cfe4997202e4.png?size=1024`);
+  .setFooter('Satan Man v1.9.0', `https://cdn.discordapp.com/avatars/805061300836237363/011e2f59163952b13143cfe4997202e4.png?size=1024`);
 
 message.channel.send(helpEmbed);
     }

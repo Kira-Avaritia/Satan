@@ -1,7 +1,7 @@
 module.exports = {
-  name: 'exit',
+  name: 'google',
   description: "console logout",
   execute(message, args){
-      console.log('^C');
+      message.channel.send(`https://google.com/?q=`)
   }
 }
